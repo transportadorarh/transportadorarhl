@@ -1,0 +1,1619 @@
+/*=========================== FONTS ===========================*/
+@font-face {
+    font-family: "Avenir-Black";
+    src: url("../fonts/Avenir-Black.otf");
+}
+@font-face {
+    font-family: "Avenir-Black-Oblique";
+    src: url("../fonts/Avenir-Black-Oblique.otf");
+}
+
+@font-face {
+    font-family: "Avenir-Book";
+    src: url("../fonts/Avenir-Book.otf");
+}
+
+@font-face {
+    font-family: "Avenir-Book-Oblique";
+    src: url("../fonts/Avenir-Book-Oblique.otf");
+}
+
+@font-face {
+    font-family: "Avenir-Heavy";
+    src: url("../fonts/Avenir-Heavy.otf");
+}
+
+@font-face {
+    font-family: "Avenir-Heavy-Oblique";
+    src: url("../fonts/Avenir-Heavy-Oblique.otf");
+}
+
+@font-face {
+    font-family: "Avenir-Light";
+    src: url("../fonts/Avenir-Light.otf");
+}
+
+@font-face {
+    font-family: "Avenir-Light-Oblique";
+    src: url("../fonts/Avenir-Light-Oblique.otf");
+}
+
+
+@font-face {
+    font-family: "Avenir-Medium";
+    src: url("../fonts/Avenir-Medium.otf");
+}
+
+@font-face {
+    font-family: "Avenir-Medium-Oblique";
+    src: url("../fonts/Avenir-Medium-Oblique.otf");
+}
+
+@font-face {
+    font-family: "Avenir-Oblique";
+    src: url("../fonts/Avenir-Oblique.otf");
+}
+
+@font-face {
+    font-family: "Avenir-Roman";
+    src: url("../fonts/Avenir-Roman.otf");
+}
+
+@font-face {
+    font-family: "PTSerif-Regular";
+    src: url("../fonts/PTSerif-Regular.otf");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/*=========================== FONTS ===========================*/
+
+
+/*=========================== GENERAL ===========================*/
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    height:100%;
+    width: 100%;
+    display: block;
+    float: left;
+    background:#d7cdab;
+    -webkit-text-size-adjust: none;
+        -webkit-font-smoothing: antialiased;
+}
+html{
+    height:100%;
+}
+.subnav{
+    position: absolute;
+    top: -18px;
+    right: 0;
+}
+.subnav a{
+    display: inline-block;
+    color: #f6c72b;
+    border: 1px solid #f6c72b;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    border-radius: 4px;
+    padding: 7px 13px 7px 30px;  
+    float: right;
+    margin-left: 3px; 
+}
+a.bt_coleta{
+    background: url(../img/icons/bt_coleta.png) 7px center no-repeat;
+}
+a.bt_localize{
+    background: url(../img/icons/bt_localize.png) 7px center no-repeat;
+}
+a.bt_webmail{
+    background: url(../img/icons/bt_webmail.png) 7px center no-repeat;
+}
+.compact .subnav{
+    top: -3px;
+}
+.compact .subnav a{
+    padding: 3px 13px 3px 30px;  
+}
+.subnav a:hover{
+    text-decoration: none;
+}
+
+
+.company-name {
+        font-size: 24px; /* ajuste o tamanho da fonte conforme necessário */
+        color: #ffffff; /* escolha uma cor que contraste com o fundo */
+        font-weight: bold; /* deixá-lo mais destacado */
+        text-transform: uppercase; /* opcional: transforma o texto em maiúsculas */
+        letter-spacing: 1px; /* espaçamento entre letras */
+        /* adicione mais estilos conforme necessário */
+        justify-content: center; /* Centraliza horizontalmente */
+        width: 100%; /* Faz o link ocupar toda a largura disponível */
+        margin-top: 7.5px;
+}
+
+/*LOADER*/
+.js .loader{
+	width:100%;
+	height:100vh;
+	display: block;
+	float: left;
+	background:#d7cdab ;
+	position: absolute;	
+	z-index: 999999;
+	top:0!important;
+}
+
+.js .center{
+	display: block;
+	margin:0 auto;
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform: translateY(-50%)!important;
+}
+
+.js .spinner {
+  height: 28px;
+  width: 28px;
+  animation: rotate 0.8s infinite linear;
+  border: 2px solid #f5c62a;
+  border-right-color: transparent;
+  border-radius: 50%;
+}
+
+@keyframes rotate {
+  0%    { transform: rotate(0deg); }
+  100%  { transform: rotate(360deg); }
+}
+/*LOADER*/
+/*BACKGOUND DAS PÁGINAS INTERNAS*/
+
+.interna{
+    min-height:100%;
+    width:100%;
+    display:block;
+    float:left;
+    margin-top:-100px;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    /* Firefox */
+    min-height: -moz-calc(100% + 100px);
+    /* WebKit */
+    min-height: -webkit-calc(100% + 100px);
+    /* Opera */
+    min-height: -o-calc(100% + 100px);
+    /* Standard */
+    min-height: calc(100% + 100px);
+}
+
+
+
+/*BACKGOUND DAS PÁGINAS INTERNAS*/
+
+.title{
+    font-family: "Avenir-Black";
+    font-size:52px;
+}
+
+.titulo-pagina .title::after{
+    content: "";
+    display: block;
+    height:3px;
+    width:15%;
+    background:#f5c62a;
+    margin:20px auto;
+    transition: all .4s ease-in-out;
+}
+
+section:hover .titulo-pagina .title::after{
+    width:25%!important;
+}
+
+.text{
+    font-family: "PTSerif-Regular";
+    font-size: 20px;
+}
+
+.subtitle{
+   font-family: "PTSerif-Regular"; 
+}
+
+@media (max-width: 400px) {
+    .title{
+        font-size:40px!important;
+    }
+    .text{
+        font-size:15px;
+    }
+}
+
+.btn{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size:10px;
+    text-transform: uppercase;
+    background:#f5c62a;
+    border-radius: 55px;
+    padding:15px 10px;
+    width:160px;
+    color:#000;
+    transition: all .2s ease-in-out;
+    
+}
+
+ span{
+    color:#f5c62a;
+}
+
+    .titulo-pagina{
+        width: 100%;
+        display: block;
+        float: left;
+        margin-top:200px;
+        animation-delay: .3s;
+    }
+
+    @media(max-width:768px) {
+       .titulo-pagina{
+            width: 100%;
+            display: block;
+            float: left;
+            margin-top:150px;
+        } 
+        .titulo-pagina .title{
+            font-size:40px;
+        }
+        .titulo-pagina .text{
+            font-size:14px;
+        }
+    }
+
+    .titulo-pagina .title{
+        width:100%;
+        text-align: center;
+        color:#fff;
+        font-size:62px;
+    }
+
+    .titulo-pagina .subtitle{
+        color:#cccccc;
+        width:100%;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .titulo-pagina .text{
+        font-family: "Avenir-Light";
+        font-size: 16px;
+        color:#fff;
+        width:100%;
+        text-align: center;
+    }
+
+@media(max-width:700px) {
+        .responsive-img{
+            max-width: 98%;
+        }
+    }
+
+.none{
+    display: none;
+}
+
+/*=========================== GENERAL ===========================*/
+
+
+/*=========================== NAV ===========================*/
+.navbar-inverse{
+    border:0;
+    margin-top:30px;
+    transition: all .3s ease-in-out;
+    position: fixed;
+    top: 0;
+}
+
+.navbar-fixed-top .nav {
+    padding: 15px 0;
+    float: left;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+	border:0;
+}
+
+.navbar-collapse{
+	box-shadow: none;
+}
+
+.navbar-fixed-top .navbar-brand {
+    padding: 0 15px;
+}
+
+.navbar-toggle{
+	border-radius: 0px;
+}
+
+@media (max-width: 1200px) {
+    .navbar-header {
+        float: none;
+        background-color: transparentw ;
+    }
+    .navbar-inverse .navbar-toggle{
+        margin-top:35px;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse{
+        background: transparent ;
+    }
+}
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse{
+    max-height: 100vh;
+    margin-top:10px;
+}
+
+.nav>li>a{
+    font-family: "Avenir-Heavy";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size:12px;
+    color:#fff!important;
+    transition: all .2s ease-in-out;
+}
+
+.nav>li>a.active{
+    color:#f5c62a!important;
+}
+
+.nav>li>a:hover{
+    color:#f5c62a!important;
+}
+
+.nav li a i{
+    display: inline-block;
+    color:#f6c72b;
+    transition: all .2s ease-in-out;
+    font-size:15px;
+}
+
+.nav li a:hover i{
+    color:#fff;
+}
+
+.nav li .icons{
+        padding: 10px 7px;
+        margin-top:5px;
+}
+
+.inline-block{
+    display: inline-block!important;
+    margin-left:12px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .nav>li>a{
+        padding:5px 8px;
+    }
+    .nav>li>a{
+        font-size:11px;
+    }
+    .nav{
+        margin-top:15px;
+    }
+    .nav li .icons{
+        margin-top:-5px;
+    }
+
+}
+
+section#frota .frotaright h3 {
+    font-family: "PTSerif-Regular";
+    color: #4f5152;
+    font-size: 1.5em; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    margin: 20px 0; /* Margens superior e inferior */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    padding: 0 15px; /* Padding lateral para espaçamento */
+}
+
+@media (max-width: 768px) {
+    section#frota .frotaright h3 {
+        font-size: 1.2em; /* Reduz o tamanho da fonte em telas menores */
+        padding: 0 10px; /* Ajusta o padding lateral */
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar-fixed-bottom .navbar-collapse, 
+    .navbar-fixed-top .navbar-collapse {
+        background: transparent;
+    }
+
+    .navbar-inverse .navbar-toggle {
+        margin-top: 1rem; /* Usando rem para mais flexibilidade */
+    }
+
+    .navbar-brand {
+        margin-top: 1rem; /* Usando rem */
+        text-align: center; /* Alinhando o texto ao centro */
+    }
+
+    .navbar-nav {
+        justify-content: flex-end; /* Alinha os ícones à direita */
+    }
+    .counter-item {
+        flex: 1 1 100%; /* Faz cada contador ocupar 100% da largura em telas menores */
+    }
+
+    .counter-item h3 {
+        font-size: 1.2em; /* Reduz o tamanho do título em telas pequenas */
+    }
+
+    .counter {
+        font-size: 1.5em; /* Reduz o tamanho do número */
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        padding-top: 100px; /* Espaçamento necessário para a navbar fixa */
+    }
+
+    .navbar-fixed-top {
+        display: flex; /* Torna a navbar um flex container */
+        justify-content: space-between; /* Distribui espaço entre itens */
+        align-items: center; /* Alinha verticalmente */
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        padding: 30px 0; /* Padding vertical da marca */
+    }
+
+    .navbar-fixed-top .nav {
+        display: flex; /* Torna a nav um flex container */
+        margin-left: auto; /* Empurra a nav para a direita */
+    }
+}
+
+
+.navbar-nav{
+    animation-delay: .1s;
+    position: relative;
+}
+
+.navbar-nav li:nth-child(1){
+    animation-delay: .2s;
+    
+}
+.navbar-nav li:nth-child(2){
+    animation-delay: .4s;
+    
+}
+.navbar-nav li:nth-child(3){
+    animation-delay: .6s;
+    
+}
+.navbar-nav li:nth-child(4){
+    animation-delay: .8s;
+    
+}
+.navbar-nav li:nth-child(5){
+    animation-delay: 1s;
+    
+}
+.navbar-nav li:nth-child(6){
+    animation-delay: 1.2s;
+    
+}
+.navbar-nav li:nth-child(7){
+    animation-delay: 1.4s;
+    
+}
+.navbar-nav li:nth-child(8){
+    animation-delay: 1.6s;
+    
+}
+.navbar-nav li:nth-child(9){
+    animation-delay: 1.6s;
+    
+}
+.navbar-nav li:nth-child(10){
+    animation-delay: 1.6s;
+    
+}
+/*=========================== NAV ===========================*/
+
+/*=========================== SLIDER ===========================*/
+.carousel,
+.item,
+.active {
+    /* Firefox */
+    height: -moz-calc(100% + 100px);
+    /* WebKit */
+    height: -webkit-calc(100% + 100px);
+    /* Opera */
+    height: -o-calc(100% + 100px);
+    /* Standard */
+    height: calc(100% + 100px);
+    }
+
+.carousel{
+    margin-top:-100px;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+  Need to override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+.carousel-caption{
+    /* Firefox */
+    top: -moz-calc(50% + 30px);
+    /* WebKit */
+    top: -webkit-calc(50% + 30px);
+    /* Opera */
+    top: -o-calc(50% + 30px);
+    /* Standard */
+    top: calc(50% + 30px);
+    transform: translateY(-50%)!important;
+    display: block;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.caption{
+    font-family: "Avenir-Black";
+    font-size:62px;
+    text-shadow: none;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra mais pronunciada */
+}
+.caption span{
+    color:#f5c62a;
+}
+@media(max-width:1200px) {
+    .carousel-caption{
+        display: block;
+    }
+    .caption{
+        font-size:40px;
+    }
+}
+
+@media(max-width:500px) {
+    .carousel-caption{
+        /* Firefox */
+        top: -moz-calc(43% + 30px);
+        /* WebKit */
+        top: -webkit-calc(43% + 30px);
+        /* Opera */
+        top: -o-calc(43% + 30px);
+        /* Standard */
+        top: calc(43% + 30px);
+        transform: translateY(-43%);
+        display: block;
+    }
+
+    .caption{
+        font-family: "Avenir-Black";
+        font-size:30px;
+        text-shadow: none;
+    }
+}
+/*=========================== SLIDER ===========================*/
+
+
+/*=========================== HOME ===========================*/
+
+    /*=========================== SECTION TRANSPORTANDO ===========================*/
+        section#transportando{
+            width: 100%;
+            display: block;
+            float: left;
+            background:#d7cdab;
+            padding:50px 0px;
+        }
+
+        section#transportando .title{
+            width: 100%;
+            text-align: center;
+            color:#000000 ;
+        }
+
+        section#transportando .text{
+            width: 100%;
+            text-align: center;
+            color:#4f5152;
+        }
+
+        section#transportando .container .transportandoitem{
+            margin-top:100px;
+        }
+        section#transportando .container .transportandoitem img{
+            display: block;
+            margin:0 auto;
+            height:35px;
+        }
+        section#transportando .container .transportandoitem .transportandotitle{
+            font-family: "Avenir-Black";
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size:15px;
+            width: 100%;
+            text-align: center;
+            color:#000000 ;
+        }
+        section#transportando .container .transportandoitem .transportandotext{
+            font-family: "PTSerif-Regular";
+            color:#4f5152;
+            font-size:14px;
+            width:90%;
+            display: block;
+            margin:0 auto;
+            text-align: center;
+        }
+
+        @media(max-width:1200px) {
+            section#transportando .container .transportandoitem{
+                width:49%!important;
+            }
+        }
+        @media(max-width:1000px) {
+            section#transportando .container .transportandoitem{
+                width:100%!important;
+            }
+        }
+
+
+    /*=========================== SECTION TRANSPORTANDO ===========================*/
+
+    /*=========================== SECTION FROTA ===========================*/
+        section#frota{
+            width:100%;
+            display: block;
+            float: left;
+        }
+
+        section#frota .frotaleft{
+            height:450px;
+            background:url(../img/brasil.png)no-repeat center;
+            background-size: cover;
+        }
+         section#frota .frotaleft .caminhao{
+            position: absolute;
+            z-index: 9;
+            margin-left:-15%;
+            margin-top:130px;
+        }
+        @media(max-width:1600px) {
+            section#frota .frotaright .margin-left{
+            margin-left:30%!important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            }
+            section#frota .frotaleft .caminhao{
+                margin-left:-40%;
+            }
+        }
+        @media(min-width:1600px) {
+            
+        }
+        @media(max-width:1300px) {
+            section#frota .frotaleft{
+                display: none;
+            }
+            section#frota .frotaright{
+                width:100%!important;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            section#frota .frotaright .margin-left{
+                margin-left:0!important;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            section#frota .frotaright .text{
+                width:50%;
+                margin: 0 auto; /* Centraliza horizontalmente */
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        @media(max-width:500px) {
+            section#frota .frotaright{
+                height: auto!important;
+                padding:1px 0px 60px 10px;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            section#frota{
+                padding-bottom:20px!important;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            section#frota .frotaright .text{
+                width:90%;
+                margin: 0 auto; /* Centraliza horizontalmente */
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            section#frota .frotaright .text .p{
+                width:90%;
+                margin: 0 auto; /* Centraliza horizontalmente */
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        section#frota .frotaright .title{
+            color:#000;
+            margin-top:70px;
+            font-family: "Avenir-Black";
+            text-align: center; /* Centraliza o título */
+        }
+        section#frota .frotaright .margin-left{
+            margin-left:25%;
+            text-align: center; /* Centraliza o título */
+        }
+
+        section#frota .frotaright .text{
+            color:#000;
+            font-size:18px;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        section#frota .frotaright .frotaitems{
+            margin-top:35px;
+        }
+
+        section#frota .frotaright .frotaitems li{
+            margin:20px 0px 20px -40px;
+            list-style-type: none;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        section#frota .frotaright .frotaitems li p{
+            color:#000;
+            font-family: "PTSerif-Regular";
+            font-size:16px;
+            margin-left:50px;
+            padding-top:5px;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        section#frota .frotaright .btn{
+            margin-top:20px;
+            
+        }
+        section#frota .frotaright .btn:hover{
+           background:#f5c62a; 
+        }
+
+        @media(min-width:1300px) {
+            section#frota .frotaright .title{
+                padding-top:0px;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        @media(max-width:1300px) {
+            section#frota .frotaright .title{
+                padding-top:70px;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        @media(max-width:768px) {
+            section#frota .frotaright .title{
+                padding-top:70px;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+        @media(max-width:468px) {
+            section#frota .frotaright .title{
+                padding-top:10px;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+    /*=========================== SECTION FROTA ===========================*/
+
+    /*=========================== SECTION PRAÇAS ===========================*/
+section#pracas {
+    width: 100%;
+    display: block;
+    float: left; /* Considere usar flex ou grid ao invés de float */
+    background: #d7cdab ;
+    padding: 130px 0 75px; /* Simplifiquei a sintaxe */
+}
+
+section#pracas .title,
+section#pracas .text {
+    color: #fff;
+    text-align: left;
+}
+
+section#pracas .text {
+    margin-top: 70px;
+    font-size: 24px;
+}
+
+section#pracas .pracasimg {
+    display: block; /* Garante que a imagem é tratada como um bloco */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    width: 100%; /* Ou ajuste conforme necessário */
+}
+
+@media (min-width: 1300px) {
+    section#pracas .pracasimg {
+        /* Considere ajustar a largura se necessário */
+        /* width: 110%; */
+    }
+}
+
+@media (max-width: 1000px) {
+    section#pracas .pracasimg {
+        margin-top: 30px; /* Ajustes para mobile */
+    }
+}
+
+/* Sugestão: Adicione um clearfix para evitar problemas de layout */
+section#pracas::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+    /*=========================== SECTION PRAÇAS ===========================*/
+
+/*=========================== HOME ===========================*/
+
+
+
+
+/*=========================== EMPRESA ===========================*/
+
+
+    section#empresa .text{
+        font-family: "Avenir-Light";
+        font-size: 16px;
+        color:#fff;
+        margin-bottom: 20px;
+    }
+
+    section#empresa .paragraphs{
+        display: block;
+        float: left;
+        margin-top:70px;
+        animation-delay: .8s;
+    }
+
+    @media(max-width:768px) {
+        section#empresa .paragraphs{
+            margin-top:20px;
+        }
+    }
+
+    @media(max-width:1000px) {
+        section#video{
+            height:auto;
+        }
+        section#video .empresa-vid-section{
+            margin:50px 0px!important;
+        }
+    }
+
+    section#video .empresa-vid-section{
+        float: left;
+        display: block;
+        margin-top:105px;
+    }
+    @media(max-width:500px) {
+        section#video .empresa-vid-section .responsive-img, section#servicos .responsive-img{
+            max-width: 98%;
+        }
+    }
+    section#video .title{
+        font-size:15px;
+        color:#f5c62a;
+        letter-spacing: 2px;
+        margin-top:45px;
+        text-transform: uppercase;
+    }
+
+    section#video .text{
+        font-size:14px;
+        color:#fff;
+        max-width:350px;
+        margin-top:20px;
+    }
+
+/*=========================== EMPRESA ===========================*/
+
+
+/*=========================== SERVIÇOS ===========================*/
+    section#servicos{
+        width: 100%;
+        display: block;
+        float: left;
+    }
+
+    section#servicos .servicos-interna{
+    	margin-top:80px;
+    }
+
+    .servicos-interna .col-md-6{
+
+    }
+
+    section#servicos .text{
+        font-size:16px;
+        color:#ffffff;
+        margin:20px 0px 80px 0px;
+    }
+
+    section#servicos .servicos-icon{
+        height:60px!important;
+    }
+
+
+/*=========================== SERVIÇOS ===========================*/
+
+
+/*=========================== PRAÇAS ===========================*/
+    section#pracas-interna{
+        width: 100%;
+        display: block;
+        float: left;
+        margin-top:80px;
+        padding-bottom: 40px;
+        animation-delay: .7s;
+    }
+
+    section#pracas-interna .text{
+        font-size: 19px;
+        color:#fff;
+        margin-top:85px;
+    }
+    section#pracas-interna .text span{
+        font-family: "Avenir-Heavy";
+        font-weight: bold;
+    }
+
+    section#pracas-interna .responsive-img{
+        max-width: 100%;
+        width:40%;
+        margin-left:100px;
+    }    
+
+    section#pracas-interna .pracas-text-alt{
+        margin-top:50px;
+    }
+
+    @media(min-width:1000px) {
+        section#pracas-interna .pracas-text-alt{
+            margin-top:120px;
+            max-width: 400px;
+        }
+    }
+
+    section#pracas-interna .btn{
+        width:auto;
+        padding:15px 20px;
+        margin-top:100px;
+        text-align: center; /* Centraliza o título */
+    }
+
+    section#pracas-interna .btn:hover{
+        background: #f5c62a;
+    }
+    @media(max-width:1000px) {
+        section#pracas-interna .btn{
+            max-width: 100%;
+            font-size:9px!important;
+            text-align: center; /* Centraliza o título */
+        }
+        .btn{
+            white-space: inherit;
+        }
+    }
+
+/*=========================== PRAÇAS ===========================*/
+
+
+/*=========================== FROTA ===========================*/
+    
+    section#frota{
+        padding-bottom:100px;
+    }
+
+
+    section#frota h4.text{
+        color:#000;
+        font-size: 19px;
+        font-family: 'Avenir-Light';
+        margin-top:30px;
+        max-width: 500px;
+        line-height: 25px;
+    }
+
+    section#frota .frota-icons{
+        margin-top:40px;
+    }
+
+    section#frota  p.text{
+        font-size: 14px;
+        color:#000;
+        margin-top:25px;
+    }
+
+    section#frota .carousel{
+        margin:0;
+    }
+
+    section#frota .margin-top{
+        margin-top:100px;
+        animation-delay: .7s;
+    }
+
+    section#frota .carousel-indicators{
+        margin-left:-28%;
+    }
+
+/*=========================== FROTA ===========================*/
+
+
+/*=========================== UNIDADES ===========================*/
+
+    section#unidades{
+        width:100%;
+        display: block;
+        float: left;
+    }
+
+    section#unidades .text{
+        font-family: 'Avenir-Light';
+        font-size:16px;
+        color:#fff;
+        line-height: 23px;
+        margin-bottom:50px;
+        animation-delay: .7s;
+    }
+
+    section#unidades .text a{
+        color:#fff;
+        transition: all .2s ease;
+        text-decoration: underline;
+    }
+
+    section#unidades .text a:hover{
+        color:#f5c62a;
+    }
+
+
+    section#unidades .text span{
+        font-family: 'Avenir-Heavy';
+        color:#f5c62a;
+        font-size:16px;
+        display: block;
+        text-transform: uppercase;
+        line-height: 33px;
+    }
+
+    section#unidades .titulo-pagina{
+        margin-bottom:100px;
+    }
+
+/*=========================== UNIDADES ===========================*/
+
+
+
+
+/*=========================== CONTATO ===========================*/
+
+    section#contato{
+        width: 100%;
+        display: block;
+        float: left;
+        padding-bottom:100px;
+    }
+    @media(max-width:992px) {
+        section#contato .col-md-8, section#contato .col-md-7, section#contato .col-md-5, section#contato .col-md-12{
+            width:100%;
+        }
+    }
+
+    section#contato .text{
+        font-family: 'PTSerif-Regular';
+        font-size: 20px;
+        color:#cccccc;
+        margin-bottom:60px;
+    }
+
+    section#contato .form-contato{
+        padding:40px 35px;
+        background:#fff;
+        float: left;
+        border-radius: 7px;
+        animation-delay: .7s;
+        margin-top:40px;
+    }
+
+    section#contato .form-contato form{
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+    section#contato .col-md-5, section#contato .col-md-7, section#contato .col-md-12{
+       /* padding:0px 3px;*/
+    }
+
+    section#contato .form-contato form input, section#contato .form-contato form textarea{
+        border:1px solid #cecece;
+        width:100%;
+        height:40px;
+        padding:3px 10px;
+        font-family: 'Avenir-Light';
+        font-size:16px;
+        color:#000;
+        margin-bottom:15px;
+        resize: none!important;
+        border-radius: 7px;
+    }
+    section#contato .form-contato form textarea{
+        height:200px;
+    }
+
+    section#contato .form-contato form input:focus, section#contato .form-contato form textarea:focus{
+        border-color: #000;
+        outline: none;
+        background:#f5c62a;
+    }
+
+    ::-webkit-input-placeholder {
+        color: #000;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+        color: #000;  
+    }
+
+    ::-moz-placeholder {  /* Firefox 19+ */
+        color: #000;  
+    }
+
+    :-ms-input-placeholder {  
+        color: #000;  
+    }
+
+    section#contato .form-contato form .btn{
+        background:#b89a66 ;
+        color:#f5c62a;
+        /*border-radius: 0px;*/
+        font-size:11px;
+    }
+
+    section#contato .form-contato form .btn img.block{
+        margin-left:8px; 
+        margin-top:-3px;
+        width:14px;
+        height:14px;
+    }
+    section#contato .form-contato form .btn img.none{
+        margin:0;
+        display: none;
+    }
+
+    section#contato .form-contato form .btn:hover{
+        background:#f5c62a;
+        color:#b89a66 ;
+    }
+
+    section#contato .form-contato .title{
+        font-size: 18px;
+        margin-left:17px;
+    }
+
+
+
+    /*formulário*/
+
+    #form-erro span, #form-send span  {
+        font-size: 27px;
+        line-height: 25px;
+        margin-bottom: 20px;
+        display: block;
+        font-family: 'Avenir-Black';
+        text-align: center;
+    }
+
+    #form-erro p{
+        font-family: 'Avenir-Medium';
+        text-align: center;
+    }
+
+    #form-send p{
+        font-family: 'Avenir-Medium';
+        text-align: center;
+        color:#000;
+    }
+
+    #form-send {
+        color: #31aa39;
+    }
+
+    #form-erro {
+        color: #f64540;
+    }
+
+/*=========================== CONTATO ===========================*/
+
+
+
+
+
+
+
+
+
+/*=========================== FOOTER ===========================*/
+        footer#footer{
+            width: 100%;
+            display: block;
+            float: left;
+            padding-top:35px;
+            background:#3b3d40;
+        }
+
+         @media(max-width:1000px) {
+            footer#footer .col-sm-3{
+                width:49%!important;
+            }
+            footer#footer .text{
+                margin-top:20px!important;
+            }
+         }
+
+        footer#footer .footer-redes{
+            margin-top:30px;
+            margin-left:-10px;
+            padding:0!important;
+        }
+
+        footer#footer .footer-redes li a i{
+            font-size:20px;
+            color:#f5c62a;
+            transition: all .2s ease-in-out;
+        }
+
+        footer#footer .footer-redes li a i:hover{
+            color:#fff;
+        }
+
+        footer#footer .text{
+            color:#767a7c;
+            font-size: 12px;
+            margin-top:113px;
+        }
+
+        footer#footer .textfooter{
+            font-family: "PTSerif-Regular";
+            font-size: 14px;
+            color:#767a7c;
+            max-width:195px;
+            margin-bottom:38px;
+            margin-top:15px;
+        }
+
+        footer#footer .footer-links{
+            float: left;
+            display: block;
+            padding:0;
+            margin-left:15px;
+        }
+
+        footer#footer .footer-links li{
+            display: inline-block;
+            list-style-type: none;
+            margin-right:10px;
+        }
+
+        @media(max-width:768px) {
+            footer#footer .footer-links li{
+                display:block;
+                margin:10px 15px;
+            }
+        }
+
+        footer#footer .footer-links .btn{
+            background:transparent;
+            border:1px solid #f5c62a;
+            width:auto;
+            color:#fff;
+            padding:5px 15px;
+            font-size:10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        footer#footer .footer-links .btn:hover{
+            background:#f5c62a;
+            color:#b89a66;
+        }
+
+        .whatsapp-tremer {
+            width: 80px; /* Largura do ícone */
+            height: 80px; /* Altura do ícone */
+            bottom: 10px; /* Distância do fundo */
+            right: 10px; /* Distância da direita */
+            position: fixed; /* Fixo na tela */
+            cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+            background-image: url(../img/icons/whatsapp-logo.webp); /* Caminho para a imagem do ícone */
+            border: 2px solid transparent; /* Borda transparente */
+            animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out; /* Animação */
+            background-size: cover; /* Cobre todo o espaço do ícone */
+            z-index: 9999; /* Colocado acima de outros elementos */
+            background-repeat: no-repeat; /* Não repetir a imagem */
+            display: block; /* Exibe como bloco */
+        }
+        
+        /* Animação */
+        @keyframes coccoc-alo-circle-img-anim {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .contact-info {
+            background-color: #3b3d40; /* Fundo claro */
+            padding: 20px; /* Espaçamento interno */
+            border-radius: 8px; /* Bordas arredondadas */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            margin-top: 15px; /* Espaçamento acima */
+        }
+        
+        .contact-info p {
+            margin: 5px 0; /* Espaçamento vertical entre parágrafos */
+            font-size: 14px; /* Tamanho da fonte */
+            color: #fff; /* Cor do texto */
+        }
+        
+        .contact-info a {
+            color: #fff; /* Cor do link */
+            text-decoration: none; /* Remove sublinhado */
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline; /* Sublinha ao passar o mouse */
+        }
+        .contact-info h4 {
+            font-size: 16px; /* Tamanho da fonte do título */
+            font-weight: bold; /* Deixar o título em negrito */
+            color: #f5c62a; /* Cor do título */
+            margin-bottom: 10px; /* Espaçamento abaixo do título */
+            border-bottom: 2px solid #f5c62a; /* Linha abaixo do título */
+            padding-bottom: 5px; /* Espaçamento interno abaixo da linha */
+            font-family: "Avenir-Heavy";
+        }
+        .footer-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .footer-list li {
+            margin: 10px 0;
+        }
+        
+        .footer-list a {
+            text-decoration: none;
+            color: #fff; /* Cor do texto */
+            transition: color 0.3s;
+            font-family: "Avenir-Heavy";
+        }
+        
+        .footer-list a:hover {
+            color: #f5c62a; /* Cor ao passar o mouse */
+        }
+        
+        .footer-list h4 {
+            margin: 0; /* Remove margens do h4 */
+        }
+        
+    /*=========================== FOOTER ===========================*/
+    
+    /* missão */
+
+    .about {
+        padding: 40px;
+        background-color: #d7cdab; /* Cor de fundo leve */
+        }
+        
+        .about h2 {
+            font-family: "Avenir-Black";
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 15px;
+            width: 100%;
+            text-align: center;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+        
+        .about p {
+            font-family: "PTSerif-Regular";
+            color: #4f5152;
+            font-size: 14px;
+            width: 90%;
+            display: block;
+            margin: 0 auto 15px auto; /* Margem inferior para espaçamento */
+            text-align: left;
+            line-height: 1.6; /* Aumenta a legibilidade */
+        }
+        
+        .values-list {
+            list-style-type: disc;
+            margin-left: 50px; /* Indentação para a lista */
+            text-align: left; /* Centraliza a lista */
+        }
+        
+        .values-list li {
+            font-family: "PTSerif-Regular";
+            color: #4f5152;
+            font-size: 14px;
+            margin-bottom: 10px; /* Espaçamento entre itens da lista */
+        }
+        
+
+    /* missão */
+    /*=========================== ANIMATIONS ===========================*/
+
+
+    .js .animated{
+        /*opacity: 0!important;*/
+    }
+    
+
+    /*=========================== ANIMATIONS ===========================*/
+
+    .counter-section {
+        display: flex; /* Usando flexbox para layout */
+        flex-wrap: wrap; 
+        justify-content: space-around;
+        padding: 20px 0;
+        background-color: #d7cdab; /* Ajuste a cor conforme necessário */
+    }
+    
+    .counter-item {
+        flex: 1 1 200px; /* Tamanho base de 200px, ajusta-se conforme necessário */
+        margin: 10px; /* Margem entre os itens */
+        text-align: center; /* Centraliza o texto */
+    }
+    
+    .counter {
+        font-size: 36px; /* Ajuste o tamanho da fonte conforme necessário */
+        color: #000000; /* Cor do texto */
+        font-weight: bold;
+    }
+    
+    .counter-item h3 {
+        font-family: "Avenir-Black", Arial, sans-serif; /* Adicionando a fonte desejada */
+        font-size: 1.5em; /* Ajuste o tamanho do título */
+        color: #000; /* Cor do texto do título */
+        margin-bottom: 10px; /* Espaçamento entre o título e o contador */
+    }
+    
+    
