@@ -1,67 +1,67 @@
 /*=========================== FONTS ===========================*/
 @font-face {
     font-family: "Avenir-Black";
-    src: url("../fonts/Avenir-Black.otf");
+    src: url("../Avenir-Black.otf");
 }
 @font-face {
     font-family: "Avenir-Black-Oblique";
-    src: url("../fonts/Avenir-Black-Oblique.otf");
+    src: url("../Avenir-Black-Oblique.otf");
 }
 
 @font-face {
     font-family: "Avenir-Book";
-    src: url("../fonts/Avenir-Book.otf");
+    src: url("../Avenir-Book.otf");
 }
 
 @font-face {
     font-family: "Avenir-Book-Oblique";
-    src: url("../fonts/Avenir-Book-Oblique.otf");
+    src: url("../Avenir-Book-Oblique.otf");
 }
 
 @font-face {
     font-family: "Avenir-Heavy";
-    src: url("../fonts/Avenir-Heavy.otf");
+    src: url("../Avenir-Heavy.otf");
 }
 
 @font-face {
     font-family: "Avenir-Heavy-Oblique";
-    src: url("../fonts/Avenir-Heavy-Oblique.otf");
+    src: url("../Avenir-Heavy-Oblique.otf");
 }
 
 @font-face {
     font-family: "Avenir-Light";
-    src: url("../fonts/Avenir-Light.otf");
+    src: url("../Avenir-Light.otf");
 }
 
 @font-face {
     font-family: "Avenir-Light-Oblique";
-    src: url("../fonts/Avenir-Light-Oblique.otf");
+    src: url("../Avenir-Light-Oblique.otf");
 }
 
 
 @font-face {
     font-family: "Avenir-Medium";
-    src: url("../fonts/Avenir-Medium.otf");
+    src: url("../Avenir-Medium.otf");
 }
 
 @font-face {
     font-family: "Avenir-Medium-Oblique";
-    src: url("../fonts/Avenir-Medium-Oblique.otf");
+    src: url("../Avenir-Medium-Oblique.otf");
 }
 
 @font-face {
     font-family: "Avenir-Oblique";
-    src: url("../fonts/Avenir-Oblique.otf");
+    src: url("../Avenir-Oblique.otf");
 }
 
 @font-face {
     font-family: "Avenir-Roman";
-    src: url("../fonts/Avenir-Roman.otf");
+    src: url("../Avenir-Roman.otf");
 }
 
 @font-face {
     font-family: "PTSerif-Regular";
-    src: url("../fonts/PTSerif-Regular.otf");
+    src: url("../PTSerif-Regular.otf");
 }
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
